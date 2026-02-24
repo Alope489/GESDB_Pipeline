@@ -1,0 +1,143 @@
+[
+    {
+        "ID":1,
+        "Data Source":"GESDB_Correct",
+        "Project\/Plant Name":"Australia-Asia PowerLink",
+        "Status":"Under construction",
+        "Rated Power (kW)":20000000,
+        "Discharge Duration at Rated Power (hrs)":2.1,
+        "Storage Capacity (kWh)":42000000,
+        "Applications":{
+            "Bulk Energy Services (General Energy Applications)":[
+
+            ],
+            "Ancillary Services":[
+                "Frequency Regulation",
+                "Operating Reserve (Non-spinning)",
+                "Operating Reserve (Spinning)",
+                "Operating Reserve (Supplementary)",
+                "Voltage Support",
+                "Black Start",
+                "Frequency Response and Virtual Inertia",
+                "Ramp Support"
+            ],
+            "Transmission Infrastructure Services":[
+                "Transmission Upgrade Deferral",
+                "Transmission Congestion Relief",
+                "Stability Damping Control"
+            ],
+            "Distribution Infrastructure Services":[
+                "Distribution Upgrade Deferral",
+                "Voltage Regulation",
+                "Reliability"
+            ],
+            "Customer Energy Management Services (End-User Services)":[
+
+            ],
+            "Others":[
+
+            ]
+        },
+        "Paired Grid Resources":"Solar",
+        "Description\/Notes":null,
+        "URL":null,
+        "Country":"Australia",
+        "City":"Powell Creek",
+        "County":null,
+        "State\/Province":"Northern Territory",
+        "Street Address":null,
+        "Postal Code":null,
+        "Latitude":null,
+        "Longitude":null,
+        "Announced Date":null,
+        "Constructed Date":null,
+        "Commissioned Date":null,
+        "Decommissioned Date":null,
+        "Latest Update Date":"10-31-2024",
+        "Project Data Validated?":"NO",
+        "Grid Interconnection Level":"Transmission",
+        "Interconnection Type":"DC",
+        "ISO\/RTO":null,
+        "System Operator":null,
+        "Utility Type":"Public-owned",
+        "Utility ID":null,
+        "Number of Subsystems":null,
+        "Energy Storage Technology Provider":"5B",
+        "Power Electronics Provider":"5B",
+        "Installer":"Bechtel",
+        "Developer":"Sun Cable",
+        "O&M Contractor":"Hatch",
+        "EPC 1":"Bechtel",
+        "EPC 2":"Hatch",
+        "EPC 3":"SMEC",
+        "Ownership Model":"Other",
+        "Ownership Model (Other)":"International consortium of investors",
+        "Owner(s)":"Sun Cable",
+        "Capital Expenditure - CAPEX (USD)":22540000000,
+        "Annual Operational Cost - OPEX (USD)":null,
+        "Annual Maintenance or Warranty Cost (USD)":null,
+        "Projected Payback Period (years)":null,
+        "Debt Provider":"Asian Development Bank (ADB)",
+        "Funding Source 1":"Private investments",
+        "Funding Source Amount 1 (USD)":null,
+        "Funding Source 2":"State subsidies",
+        "Funding Source Amount 2 (USD)":null,
+        "Funding Source 3":"Green energy grants",
+        "Funding Source Amount 3 (USD)":null,
+        "Contact Information: Name":"Dr. Alex Johnson",
+        "Contact Information: Email Address":"alex.johnson@suncable.com.au",
+        "Contact Information: Phone Number":"+61 2 1234 5678",
+        "Subsystems":[
+            {
+                "Subsystem Name":"Subsystem 1",
+                "ID":1,
+                "Storage Device":{
+                    "Broad Category":"Electro-chemical energy storage",
+                    "Mid Type":"Lithium-ion battery",
+                    "Sub Type":"Lithium-iron phosphate battery",
+                    "Round-trip Efficiency":92,
+                    "Depth of Discharge":90,
+                    "Warranty Lifetime (cycles)":10000,
+                    "Warranty Lifetime (years)":15,
+                    "Specific Energy":250,
+                    "Energy Density":500,
+                    "Footprint":null,
+                    "Number of Cells":null
+                },
+                "Power Conversion System":{
+                    "Maximum Charge Power":5000,
+                    "Maximum Discharge Power":null,
+                    "Overload Capability":150,
+                    "Time Allowed for Overload":null,
+                    "Ramping Rate":20,
+                    "Response Time":1,
+                    "Nominal DC Voltage":1,
+                    "Nominal AC Voltage":0.415,
+                    "Nominal Frequency":null,
+                    "Operating Frequency Range (Low)":48,
+                    "Operating Frequency Range (High)":52,
+                    "Number of Phases":null,
+                    "Topology":null,
+                    "Full Load Efficiency":98,
+                    "Efficiency Degradation":1,
+                    "Standby Energy Consumption":null,
+                    "Lagging Power Factor Range":null,
+                    "Leading Power Factor Range":null,
+                    "Maximum Total Current Harmonic Distortion":null,
+                    "Frequency Ride Through (FRT)":null,
+                    "Low Voltage Ride Through (LVRT)":"YES",
+                    "High Voltage Ride Through (HVRT)":"YES",
+                    "Warranty Lifetime (years)":null
+                },
+                "Balance of System":{
+                    "Transformer Rating":10000,
+                    "Transformer Configuration":"Two-winding",
+                    "Operating Temperature":50,
+                    "Communications":"Modbus",
+                    "Enclosures":"IP67",
+                    "Controller Type":"GridMaster"
+                }
+            }
+        ]
+    }
+]

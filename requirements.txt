@@ -1,0 +1,13 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+newspaper4k
+lxml
+openai
+langchain_openai
+langchain_community
+langchain_core
+langchain
+pytest
+validators
+pytest
+fuzzywuzzy[speedup]
