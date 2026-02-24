@@ -123,7 +123,7 @@ celerybeat.pid
 
 # Environments
 # .env
-# .venv
+.venv/
 # env/
 # venv/
 # ENV/
@@ -139,6 +139,11 @@ celerybeat.pid
 
 # mkdocs documentation
 /site
+
+# Project
+.streamlit/
+documents/
+figures/
 
 # mypy
 .mypy_cache/
