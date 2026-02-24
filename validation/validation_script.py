@@ -1,10 +1,15 @@
 import datetime
 import json
+import pathlib
 import pandas as pd
 import numpy as np
 from dateutil.parser import parse
-from .validation_functions import *
-from .errorcodes import *
+try:
+    from .validation_functions import *
+    from .errorcodes import *
+except ImportError:
+    from validation_functions import *
+    from errorcodes import *
 
 
 
@@ -79,17 +84,18 @@ def convert_err_code_to_str(error_list):
     return error_codes_str
 
 
-def run_validation():
-     # - Get today's date
+def run_validation(input_path=None):
+    script_dir = pathlib.Path(__file__).resolve().parent
+    # - Get today's date
     TODAY = datetime.datetime.now().strftime("%m/%d/%y")
 
     # ***** Read the database JSON file
-    df_GESDB = pd.read_json(r'data\output\processed_data.json')
-    # df_GESDB = pd.read_json(r'data/test_data.json')
+    json_path = pathlib.Path(input_path) if input_path else script_dir / 'data' / 'test_data.json'
+    df_GESDB = pd.read_json(str(json_path))
     gesdb_fields = df_GESDB.keys()
 
     # ***** Read the GESDB Schema/ Rules
-    rules_GESDB = pd.read_csv(r'validation\data\gesdb_data_rules.csv')
+    rules_GESDB = pd.read_csv(str(script_dir / 'data' / 'gesdb_data_rules.csv'))
     # rules_by_name = rules_GESDB.set_index('Unique Field Name')
 
     # def get_rule(col_name: str):
@@ -231,7 +237,7 @@ def run_validation():
                 COUNTER += 1
                 # - iterate over 'application_sub_fields'
                 for sub_field in application_sub_fields:
-                    num_applications = len(df_GESDB[field][row][sub_field])
+                    num_applications = len(df_GESDB[field][row][sub_field] or [])
                     for i in range(num_applications):
                         # >>>>>>> 1. Perform DATA TYPE validation <<<<<<<< #
                         # val_results_data_type = validate_data_type(
@@ -496,7 +502,10 @@ def run_validation():
                     lower_range=field_rule['Lower Range'],
                     upper_range=field_rule['Upper Range'])
 
-          
+                validation_statuses.append(val_results_data_type)
+                validation_statuses.append(val_results_data_range)
+                error_codes_list.append(val_results_data_type[2])
+                error_codes_list.append(val_results_data_range[2])
 
                 # >>> 3. Perform Validation of GESDB field `Status` <<<< #
                 if field.lower() == 'status':
@@ -563,14 +572,15 @@ def run_validation():
         ROW_COUNTER += 1
 
     # ******  Write results to CSV file
-    validation_dataFrame.to_csv(r'validation/output/validation_status.csv', index=False)
-    warning_dataFrame.to_csv(r'validation/output/warning_messages.csv', index=False)
+    (script_dir / 'output').mkdir(parents=True, exist_ok=True)
+    validation_dataFrame.to_csv(str(script_dir / 'output' / 'validation_status.csv'), index=False)
+    warning_dataFrame.to_csv(str(script_dir / 'output' / 'warning_messages.csv'), index=False)
 
     # ****** Write results to JSON file
     validation_data_str = validation_dataFrame.to_json(orient='records')
     validation_data_str_parsed = json.loads(validation_data_str)
 
-    with open(r'output/validation_status.json', 'w') as f:
+    with open(script_dir / 'output' / 'validation_status.json', 'w', encoding='utf-8') as f:
         json.dump(validation_data_str_parsed, f, indent=2)
 
     print("VALIDATION CODE EXECUTED !!! ")

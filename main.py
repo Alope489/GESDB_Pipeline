@@ -38,7 +38,7 @@ def pipeline():
     print("Starting ArticleProcessor...")
     processor.process_articles()
     print
-    run_validation()
+    run_validation(output_path)
     
     data_insert.process_data()
     

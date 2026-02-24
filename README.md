@@ -23,6 +23,23 @@ The pipeline is initiated by running `main.py`, which contains the script for sc
 
    This will trigger the scraping process, gather new article URLs, extract their content, and save the results to a JSON file.
 
+### API keys
+
+Store API keys in a `.env` file in the project root (never commit it). Copy `.env.example` to `.env`, then add your values:
+
+- **OPENAI_API_KEY** — required for article processing and LLM steps ([OpenAI API keys](https://platform.openai.com/api-keys))
+- **GOOGLE_CSE_API_KEY** / **GOOGLE_CSE_ENGINE_ID** — optional, for Google Custom Search in data insert
+- Uncomment and set **SERPER_API_KEY** or **SEARCH_API_KEY** when you add the web-search filler
+
+The app loads `.env` automatically when you run `main.py` or the Streamlit pipeline.
+
+### Validation data source
+
+The validation step (`run_validation` in `validation/validation_script.py`) runs on different inputs depending on how it is invoked:
+
+- **From the pipeline or main process** (`pipeline.py` or `main.py`): validation reads **`data/output/processed_data.json`**, so validation status reflects the current pipeline output.
+- **With no arguments** (e.g. `python -m validation.validation_script` or tests): validation reads **`validation/data/test_data.json`** for development and testing.
+
 ---
 
 ## Article Scraper: Overview

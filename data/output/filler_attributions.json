@@ -1,0 +1,668 @@
+[
+  {
+    "record_id": 1,
+    "fields_filled": [
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 120000,
+        "source": "web_search"
+      },
+      {
+        "field": "Paired Grid Resources",
+        "value": "hydroelectric",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 1,
+    "fields_filled": [
+      {
+        "field": "County",
+        "value": "Trento",
+        "source": "web_search"
+      },
+      {
+        "field": "Street Address",
+        "value": "Via Giacomo Cis, 13",
+        "source": "web_search"
+      },
+      {
+        "field": "Postal Code",
+        "value": 38066,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 1,
+    "fields_filled": [
+      {
+        "field": "System Operator",
+        "value": "Enel",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 1,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Storage Device.Storage Capacity (kWh)",
+        "value": 80000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "Project/Plant Name",
+        "value": "Trino solar park + storage facility",
+        "source": "web_search"
+      },
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 25000,
+        "source": "web_search"
+      },
+      {
+        "field": "Paired Grid Resources",
+        "value": "solar",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "County",
+        "value": "Vercelli",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "Interconnection Type",
+        "value": "AC",
+        "source": "web_search"
+      },
+      {
+        "field": "ISO/RTO",
+        "value": "Terna",
+        "source": "web_search"
+      },
+      {
+        "field": "System Operator",
+        "value": "Trinasolar ISBU",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "Debt Provider",
+        "value": "NORD/LB",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 1",
+        "value": "Trina Solar",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 1 (USD)",
+        "value": 165000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 2",
+        "value": "null",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 3",
+        "value": "null",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Storage Device.Storage Capacity (kWh)",
+        "value": 100000,
+        "source": "web_search"
+      },
+      {
+        "field": "Subsystems[0].Power Conversion System.Maximum Discharge Power (kW)",
+        "value": 25000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 1,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Power Conversion System.Maximum Discharge Power (kW)",
+        "value": 120,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 2,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Power Conversion System.Maximum Charge Power (kW)",
+        "value": 25000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 158000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "West Java",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Debt Provider",
+        "value": "consortium of international commercial banks",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 1 (USD)",
+        "value": 100000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 2 (USD)",
+        "value": 8000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 98400,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "South Sumatra",
+        "source": "web_search"
+      },
+      {
+        "field": "County",
+        "value": "Muara Enim",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "System Operator",
+        "value": "PT Supreme Energy Rantau Dedap (SERD)",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "Capital Expenditure - CAPEX (USD)",
+        "value": 700000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "State/Province",
+        "value": "West Java",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Captial Expenditure - CAPEX (USD)",
+        "value": 1560000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "Street Address",
+        "value": "Rantau Dedap District",
+        "source": "web_search"
+      },
+      {
+        "field": "State/Province",
+        "value": "South Sumatra",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [
+      {
+        "field": "Debt Provider",
+        "value": "JBIC",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 2",
+        "value": "Asian Development Bank (ADB)",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 2 (USD)",
+        "value": 50000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Captial Expenditure - CAPEX (USD)",
+        "value": 700000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "County",
+        "value": "West Java",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Funding Source 3",
+        "value": "Standard Chartered",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 5,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 6,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 6,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "Masovian",
+        "source": "web_search"
+      },
+      {
+        "field": "Street Address",
+        "value": "Świerże Górne",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 6,
+    "fields_filled": [
+      {
+        "field": "Commissioned Date",
+        "value": "12-19-2014",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 6,
+    "fields_filled": [
+      {
+        "field": "System Operator",
+        "value": "Enea",
+        "source": "web_search"
+      },
+      {
+        "field": "Utility Type",
+        "value": "State/municipal-owned",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 6,
+    "fields_filled": [
+      {
+        "field": "Ownership Model",
+        "value": "Utility-Owned",
+        "source": "web_search"
+      },
+      {
+        "field": "Owner(s)",
+        "value": [
+          "ENEA Wytwarzanie"
+        ],
+        "source": "web_search"
+      },
+      {
+        "field": "Capital Expenditure - CAPEX (USD)",
+        "value": 1500000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 1",
+        "value": "Syndicated loan",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 1 (USD)",
+        "value": 1650000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 158000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "West Java",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Constructed Date",
+        "value": "12-31-2022",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "Debt Provider",
+        "value": "consortium of international commercial banks",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 1 (USD)",
+        "value": 100000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 2 (USD)",
+        "value": 8000000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [
+      {
+        "field": "County",
+        "value": "West Java",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 4,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  }
+]

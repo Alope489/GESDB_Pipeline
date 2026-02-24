@@ -4,7 +4,10 @@ import datetime
 import numpy as np
 import pandas as pd
 import validators
-from .errorcodes import *
+try:
+    from .errorcodes import *
+except ImportError:
+    from errorcodes import *
 
 def is_date(date_string):
     """
@@ -230,9 +233,16 @@ def validate_data_range(data, required, lower_range, upper_range):
             lower_range = lower_range[1:]  # Remove the '>'
         if upper_range.startswith('>'):
             upper_range = upper_range[1:]  # Remove the '>'
-            
+        try:
+            data_num = float(data)
+        except (TypeError, ValueError):
+            description_builder.append(
+                " Data is not numeric, unable to validate range.")
+            error_codes.append(str(DataRangeErrors.CODE_LOWER_RANGE_VIOLATION_2.value))
+            description = "".join(description_builder)
+            return "Unvalidated", description, error_codes
         # - check for lower range
-        if int(data) < int(lower_range):
+        if data_num < int(lower_range):
             description_builder \
                 .append(" Value for this field should be greater than "
                         + lower_range)
@@ -240,7 +250,7 @@ def validate_data_range(data, required, lower_range, upper_range):
             error_codes.append(
                 str(DataRangeErrors.CODE_LOWER_RANGE_VIOLATION_2.value))
         # - check for upper range
-        if int(data) > int(upper_range):
+        if upper_range != "not applicable" and upper_range.isnumeric() and data_num > int(upper_range):
             description_builder \
                 .append(" Value for this field should be lower than "
                         + upper_range)
@@ -677,25 +687,29 @@ def validate_capacity_to_power_ratio(data_rated_power,
 
     def ratio_compute(capacity, power):
         try:
-            return capacity/power
-        except ZeroDivisionError:
-            return 0
+            return float(capacity) / float(power)
+        except (ZeroDivisionError, TypeError, ValueError):
+            return None
 
     error_codes = []
     description_builder = []
+    ratio = ratio_compute(data_storage_capacity, data_rated_power)
 
     # Check to see if the ratio of capacity to rated power is equal to
     # discharge_hours. This function does not produce any warning message for
     # case when both capacity and rated power is zero. This will be caught
-    # by other validation rules.
-
-    if ratio_compute(data_storage_capacity,data_rated_power) != discharge_hours:
-        description_builder.append('Discharge duration should be equal to ratio of Storage Capacity to Rated Power.')
-        error_codes.append(str(CapacityPowerRatioError.RATIO_NOT_EQUAL.value))
-    
-    if ratio_compute(data_storage_capacity,data_rated_power) > threshold_hours:
-        description_builder.append(' The ratio of storage capacity to rated power is very high, validate the entries.')
-        error_codes.append(str(CapacityPowerRatioError.RATIO_HIGH.value))
+    # by other validation rules. Skip ratio checks when values are non-numeric.
+    if ratio is not None:
+        try:
+            discharge_hours_num = float(discharge_hours)
+        except (TypeError, ValueError):
+            discharge_hours_num = None
+        if discharge_hours_num is not None and ratio != discharge_hours_num:
+            description_builder.append('Discharge duration should be equal to ratio of Storage Capacity to Rated Power.')
+            error_codes.append(str(CapacityPowerRatioError.RATIO_NOT_EQUAL.value))
+        if ratio > threshold_hours:
+            description_builder.append(' The ratio of storage capacity to rated power is very high, validate the entries.')
+            error_codes.append(str(CapacityPowerRatioError.RATIO_HIGH.value))
 
     # ****** create the appropriate description
     warning_msg = "".join(description_builder)
@@ -731,44 +745,56 @@ def validate_dates(announced_date,
     
     error_codes = []
     description_builder = []
-    
+    if pd.isna(announced_date):
+        announced_date = None
+    if pd.isna(constructed_date):
+        constructed_date = None
+    if pd.isna(commissioned_date):
+        commissioned_date = None
+    if pd.isna(decommissioned_date):
+        decommissioned_date = None
+
     # ***** Convert non-empty strings to dates
-    if announced_date is not None:
-        a_date = datetime.datetime.strptime(announced_date, '%m-%d-%Y')
-    if constructed_date is not None:
-        c1_date = datetime.datetime.strptime(constructed_date, '%m-%d-%Y')
-    if commissioned_date is not None:
-        c2_date = datetime.datetime.strptime(commissioned_date, '%m-%d-%Y')
-    if decommissioned_date is not None:
-        d_date = datetime.datetime.strptime(decommissioned_date, '%m-%d-%Y')
+    def parse_date(v):
+        if v is None or pd.isna(v):
+            return None
+        try:
+            return datetime.datetime.strptime(str(v).strip(), '%m-%d-%Y')
+        except (ValueError, TypeError):
+            return None
+
+    a_date = parse_date(announced_date)
+    c1_date = parse_date(constructed_date)
+    c2_date = parse_date(commissioned_date)
+    d_date = parse_date(decommissioned_date)
 
     # ****** Check order of dates
-    if (announced_date is not None) and (constructed_date is not None):
+    if (a_date is not None) and (c1_date is not None):
         if a_date > c1_date:
             description_builder.append('Constructed date cannot be earlier than announced date.')
             error_codes.append(str(DateError.C1_EARLIER_THAN_A.value))
 
-    if (constructed_date is not None) and (commissioned_date is not None):
+    if (c1_date is not None) and (c2_date is not None):
         if c1_date > c2_date:
             description_builder.append(' Commissioned date cannot be earlier than constructed date.')
             error_codes.append(str(DateError.C2_EARLIER_THAN_C1.value))
 
-    if (commissioned_date is not None) and (decommissioned_date is not None):
+    if (c2_date is not None) and (d_date is not None):
         if c2_date > d_date:
             description_builder.append(' Decommissioned date cannot be earlier than commissioned date.')
             error_codes.append(str(DateError.D_EARLIER_THAN_C2.value))
 
-    if (announced_date is not None) and (commissioned_date is not None):
+    if (a_date is not None) and (c2_date is not None):
         if a_date > c2_date:
             description_builder.append(' Commissioned date cannot be earlier than announced date.')
             error_codes.append(str(DateError.C2_EARLIER_THAN_A.value))
      
-    if (announced_date is not None) and (decommissioned_date is not None):
+    if (a_date is not None) and (d_date is not None):
         if a_date > d_date:
             description_builder.append(' Decommissioned date cannot be earlier than announced date.')
             error_codes.append(str(DateError.D_EARLIER_THAN_A.value))
    
-    if (constructed_date is not None) and (decommissioned_date is not None):
+    if (c1_date is not None) and (d_date is not None):
         if c1_date > d_date:
             description_builder.append(' Decommissioned date cannot be earlier than constructed date.')
             error_codes.append(str(DateError.D_EARLIER_THAN_C1.value))

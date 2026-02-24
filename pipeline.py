@@ -1,8 +1,12 @@
+import ast
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 import streamlit as st
 import pandas as pd
 import json
 import re
-import os
 import requests
 import base64
 import time
@@ -26,9 +30,94 @@ SITE_CONFIGS = [
     # Add additional configurations if needed
 ]
 
-# File path for the processed data
-DATA_FILE_PATH = "data/output/processed_data.json"
-VALIDATION_STATUS_FILE = "validation/output/validation_status.csv"
+# Absolute paths so pipeline and filler use the same files (no cwd mismatch)
+_DATA_DIR = Path(__file__).resolve().parent
+DATA_FILE_PATH = str(_DATA_DIR / "data" / "output" / "processed_data.json")
+VALIDATION_STATUS_FILE = str(_DATA_DIR / "validation" / "output" / "validation_status.csv")
+
+
+def _error_code_messages():
+    return {
+        101: "Missing data - Entry is required for this field.",
+        102: "Missing data - Data entry is OPTIONAL.",
+        103: "Required data type is text.",
+        104: "Required data type is integer.",
+        105: "Required data type is float.",
+        106: "Required data type is either integer/float.",
+        107: "Data is NOT in format MM:DD:YYYY.",
+        108: "Data type mismatch.",
+        201: "Missing data - Unable to validate data range.",
+        202: "Missing data - Data entry is OPTIONAL; unable to validate data range.",
+        203: "Value for this field should be greater than 0.",
+        204: "Value for this field should be greater than lower_range.",
+        205: "Value for this field should be lower than upper_range.",
+        206: "Value for this date field is NOT within valid range.",
+        301: "Status field is empty. This is a required field.",
+        302: "Status for this field is NOT in the valid value list.",
+        701: "All applications field are empty. At least one application is required per project.",
+        702: "At least one of the values in the applications field is NOT in the valid value list.",
+        1001: "The URL provided is possibly malformed.",
+        2501: "Grid Interconnection Level field is empty; this is a REQUIRED field.",
+        2502: "Grid interconnection level for this field is NOT in the list of valid values.",
+        6401: "Technology Broad Category field is empty; this is a REQUIRED field.",
+        6402: "Technology Broad Category for this field is NOT in the list of valid values.",
+        6501: "Technology Mid Type field is empty; this is a REQUIRED field.",
+        6502: "Technology mid-type is NOT in list of valid values for broad category electro-chemical battery and chemical storage.",
+        6503: "Technology mid-type is NOT in list of valid values for broad category electro-mechanical energy storage.",
+        6504: "Technology mid-type is NOT in list of valid values for broad category thermal energy storage.",
+        20001: "Discharge duration should be equal to ratio of Storage Capacity to Rated Power.",
+        20002: "The ratio of storage capacity to rated power is very high; validate the entries.",
+        30001: "Constructed date cannot be earlier than announced date.",
+        30002: "Commissioned date cannot be earlier than constructed date.",
+        30003: "Decommissioned date cannot be earlier than commissioned date.",
+        30004: "Commissioned date cannot be earlier than announced date.",
+        30005: "Decommissioned date cannot be earlier than announced date.",
+        30006: "Decommissioned date cannot be earlier than constructed date.",
+    }
+
+
+def _parse_validation_cell(cell):
+    if cell is None or (isinstance(cell, float) and pd.isna(cell)):
+        return []
+    if isinstance(cell, list):
+        return cell
+    if isinstance(cell, str):
+        s = cell.strip()
+        if not s:
+            return []
+        try:
+            return ast.literal_eval(s)
+        except (ValueError, SyntaxError):
+            return []
+    return []
+
+
+def _format_validation_issues(val_row, code_messages):
+    issues = []
+    skip_cols = {"Index"}
+    for col in val_row.index:
+        if col in skip_cols:
+            continue
+        raw = val_row[col]
+        parsed = _parse_validation_cell(raw)
+        if not parsed:
+            continue
+        entry = parsed[0] if isinstance(parsed[0], dict) else {}
+        if entry.get("flag", "").lower() != "unvalidated":
+            continue
+        desc = entry.get("flag_description", "").strip()
+        codes_str = entry.get("error_codes", "").strip()
+        code_list = [c.strip() for c in codes_str.split(",") if c.strip()]
+        code_msgs = []
+        for c in code_list:
+            try:
+                code_int = int(c)
+                code_msgs.append((code_int, code_messages.get(code_int, c)))
+            except ValueError:
+                code_msgs.append((c, c))
+        issues.append({"field": col, "description": desc, "codes": code_msgs})
+    return issues
+
 
 # Load JSON data
 @st.cache_data
@@ -331,13 +420,38 @@ def display_record_grouped(record, record_id, edit_mode: bool = True):
 
     return edited_record
 
+def _row_fully_validated(val_row):
+    """True if validation status row has no Unvalidated flags (from run_validation CSV)."""
+    skip = {"Index", "ID"}
+    for col in val_row.index:
+        if col in skip:
+            continue
+        parsed = _parse_validation_cell(val_row[col])
+        if not parsed:
+            continue
+        entry = parsed[0] if isinstance(parsed[0], dict) else {}
+        if entry.get("flag", "").lower() == "unvalidated":
+            return False
+    return True
+
+
 def display_validated_records(data):
     st.title("Validated Records")
 
+    validation_status = load_validation_status(VALIDATION_STATUS_FILE)
     validated_records = []
-    for idx, record in enumerate(data):
-        if st.session_state.get(f"record_validated_{idx}", False):
-            validated_records.append(record)
+    if validation_status is not None and hasattr(validation_status, "empty") and not validation_status.empty and len(validation_status) == len(data):
+        for idx in range(len(data)):
+            if idx < len(validation_status) and _row_fully_validated(validation_status.iloc[idx]):
+                validated_records.append(data[idx])
+    else:
+        for idx, record in enumerate(data):
+            if st.session_state.get(f"record_validated_{idx}", False):
+                validated_records.append(record)
+        if validation_status is None or (hasattr(validation_status, "empty") and validation_status.empty):
+            st.info("Run **Step 3: Validation** in the Run Pipeline tab, then return here to see records that passed validation.")
+        elif validation_status is not None and len(validation_status) != len(data):
+            st.warning("Validation row count does not match data. Re-run **Step 3: Validation** in the Run Pipeline tab.")
 
     st.write(f"Total validated records: {len(validated_records)}")
 
@@ -433,7 +547,7 @@ def view_records_tab():
     validation_status = load_validation_status(VALIDATION_STATUS_FILE)
 
     if data is not None and isinstance(data, list) and len(data) > 0:
-        ids = [item.get("ID", f"Record {idx}") for idx, item in enumerate(data)]
+        ids = [str(item.get("ID", f"Record {idx}")) for idx, item in enumerate(data)]
         selected_index = st.selectbox(
             "Select Record", range(len(ids)), format_func=lambda x: ids[x]
         )
@@ -475,25 +589,31 @@ def view_records_tab():
         if validation_status is not None:
             try:
                 if hasattr(validation_status, "empty") and not validation_status.empty:
-                    # Prefer matching by ID if present
-                    rec_id = selected_record.get("ID", None)
-                    if rec_id is not None and "ID" in validation_status.columns:
-                        match = validation_status[validation_status["ID"] == rec_id]
-                        if not match.empty:
-                            val_row = match.iloc[0]
-
-                    # Fallback to positional index if within bounds
-                    if val_row is None and selected_index < len(validation_status):
+                    if len(validation_status) != len(data):
+                        st.warning(
+                            "Validation row count does not match data. Re-run validation from the Pipeline tab to align results."
+                        )
+                    if selected_index < len(validation_status):
                         val_row = validation_status.iloc[selected_index]
             except Exception as e:
                 st.info(f"Unable to read validation row: {e}")
 
         with st.expander("View Validation Errors"):
-            if val_row is not None:
-                for col, val in val_row.items():
-                    st.markdown(f"**{col}:** {val}")
-            else:
+            if val_row is None:
                 st.write("No validation data for this record yet.")
+            else:
+                code_messages = _error_code_messages()
+                issues = _format_validation_issues(val_row, code_messages)
+                if not issues:
+                    st.write("No validation issues for this record.")
+                else:
+                    for issue in issues:
+                        st.markdown(f"**{issue['field']}**")
+                        if issue["description"]:
+                            st.caption(issue["description"])
+                        for code, msg in issue["codes"]:
+                            st.markdown(f"- **{code}** — {msg}")
+                        st.markdown("")
 
         # Download current (possibly edited) record as JSON
         st.download_button(
@@ -547,7 +667,7 @@ def pipeline_tab():
         input_path = st.text_input("Input Path", value="data/input/articles_power_technology.json", key="input_path")
         output_path = st.text_input("Output Path", value="data/output/processed_data.json", key="output_path")
         limit = st.number_input("Processing Limit (0 for no limit)", min_value=0, value=1, step=1, key="limit")
-        api_key = st.text_input("API Key", type="password", key="api_key")
+        api_key = st.text_input("API Key", value=os.getenv("OPENAI_API_KEY", ""), type="password", key="api_key")
 
         if st.button("Run Article Processing"):
             st.write("Running article processing with the following configuration:")
@@ -566,8 +686,10 @@ def pipeline_tab():
             st.write("Running validation step...")
 
             try:
-                run_validation()
-                st.success("Validation complete.")
+                run_validation(DATA_FILE_PATH)
+                st.cache_data.clear()
+                st.success("Validation complete. Open View Records or Validated Records to see results.")
+                st.rerun()
             except Exception as e:
                 st.error(f"Error during validation: {e}")
 
@@ -580,6 +702,32 @@ def pipeline_tab():
                 st.success("Data insertion complete.")
             except Exception as e:
                 st.error(f"Error during data insertion: {e}")
+
+    with st.expander("Step 5: Data Filler (web search)"):
+        st.caption("Fills missing/null/zero fields in processed_data.json using web search and LLM. Uses SEARCH_API_KEY and OPENAI_API_KEY from .env. If you see 'no module called serpapi', run: pip install google-search-results")
+        start_filler = st.number_input("Start from record index (0 = first)", min_value=0, value=0, step=1, key="filler_start")
+        limit_filler = st.number_input("Number of records to process (0 = all from start)", min_value=0, value=0, step=1, key="filler_limit")
+        debug_filler = st.checkbox("Debug (log steps to console)", value=False, key="filler_debug")
+        if st.button("Run Data Filler"):
+            try:
+                from filler.run_filler import run
+                n, modified, attrs = run(
+                    data_path=Path(DATA_FILE_PATH),
+                    attributions_path=Path(DATA_FILE_PATH).parent / "filler_attributions.json",
+                    limit_records=(None if limit_filler == 0 else limit_filler),
+                    start_record_index=start_filler,
+                    debug=debug_filler,
+                )
+                st.cache_data.clear()
+                st.success(f"Filler complete: {n} record(s) processed, {modified} modified, {attrs} attribute(s) filled. Open View Records or Validated Records to see updates.")
+                if n > 0 and attrs == 0:
+                    st.warning("No attributes were filled. If you expected fills, check that SEARCH_API_KEY and OPENAI_API_KEY are set in .env in the project root and that the keys are valid.")
+                st.rerun()
+            except Exception as e:
+                err = str(e)
+                st.error(f"Error during data filler: {e}")
+                if "SerpAPI client not installed" in err or "serpapi" in err.lower():
+                    st.info("Install in the same Python that runs this app. In a terminal: **pip install google-search-results** (or **python -m pip install google-search-results**). Then restart the Streamlit app.")
 
 # Main application
 def main():
