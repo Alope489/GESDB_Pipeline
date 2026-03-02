@@ -1,6 +1,7 @@
 import ast
 import math
 import os
+import subprocess
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -236,6 +237,82 @@ def save_github_token_to_secrets(token: str) -> tuple[bool, str]:
             last_err = f"{type(e).__name__}: {e}"
 
     return False, f"Unable to write secrets.toml. Last error: {last_err}"
+
+
+def _parse_github_remote_url(url: str) -> tuple[str | None, str | None]:
+    """
+    Parse a git remote URL into (owner, repo). Returns (None, None) if not recognized.
+    Supports https://github.com/owner/repo[.git] and git@github.com:owner/repo[.git].
+    """
+    if not url or not isinstance(url, str):
+        return None, None
+    url = url.strip()
+    if url.startswith("https://github.com/") or url.startswith("http://github.com/"):
+        rest = url.split("github.com/", 1)[-1].rstrip("/")
+        if rest.endswith(".git"):
+            rest = rest[:-4]
+        parts = rest.split("/", 1)
+        if len(parts) == 2 and parts[0] and parts[1]:
+            return parts[0], parts[1]
+        return None, None
+    if url.startswith("git@github.com:"):
+        rest = url.split("git@github.com:", 1)[-1].rstrip("/")
+        if rest.endswith(".git"):
+            rest = rest[:-4]
+        parts = rest.split("/", 1)
+        if len(parts) == 2 and parts[0] and parts[1]:
+            return parts[0], parts[1]
+        if "/" not in rest and rest:
+            return None, rest
+        return None, None
+    return None, None
+
+
+def _get_git_origin_defaults(repo_root: Path) -> tuple[str, str, str]:
+    """
+    Detect owner, repo, and default branch from git origin. Returns fallbacks if not a git repo or git unavailable.
+    """
+    fallback_owner = "your-org-or-user"
+    fallback_repo = "your-repo"
+    fallback_branch = "main"
+    repo_root = Path(repo_root).resolve()
+    try:
+        r = subprocess.run(
+            ["git", "remote", "get-url", "origin"],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        if r.returncode != 0 or not r.stdout:
+            return fallback_owner, fallback_repo, fallback_branch
+        owner, repo = _parse_github_remote_url(r.stdout.strip())
+        if owner is None:
+            owner = fallback_owner
+        if repo is None:
+            repo = fallback_repo
+        r2 = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "origin/HEAD"],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            timeout=5,
+        )
+        branch = fallback_branch
+        if r2.returncode == 0 and r2.stdout:
+            ref = r2.stdout.strip()
+            if ref.startswith("origin/"):
+                branch = ref[7:]
+        return owner, repo, branch
+    except Exception:
+        return fallback_owner, fallback_repo, fallback_branch
+
+
+@st.cache_data
+def get_git_origin_defaults() -> tuple[str, str, str]:
+    """Cached (owner, repo, branch) from current project's git origin. Used as form defaults."""
+    return _get_git_origin_defaults(_DATA_DIR)
+
 
 def github_upsert_content(*, token: str, owner: str, repo: str, branch: str,
                           path_in_repo: str, content_bytes: bytes,
@@ -526,12 +603,13 @@ def display_validated_records(data):
     st.markdown("---")
     st.subheader("Push validated records to GitHub")
 
+    default_owner, default_repo, default_branch = get_git_origin_defaults()
     with st.form("github_push_form", clear_on_submit=False):
         col1, col2 = st.columns(2)
         with col1:
-            owner = st.text_input("GitHub Owner / Org", value="your-org-or-user")
-            repo = st.text_input("Repository Name", value="your-repo")
-            branch = st.text_input("Branch", value="main")
+            owner = st.text_input("GitHub Owner / Org", value=default_owner)
+            repo = st.text_input("Repository Name", value=default_repo)
+            branch = st.text_input("Branch", value=default_branch)
             dir_path = st.text_input("Target directory in repo", value="data/exports")
         with col2:
             # Gracefully read a default from secrets if present; don’t crash if missing
