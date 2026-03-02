@@ -142,8 +142,12 @@ celerybeat.pid
 
 # Project
 .streamlit/
+.streamlit/secrets.toml
 documents/
 figures/
+test.ipynb
+filler/test_encoding_validation.py
+scripts/cleanup_mojibake_processed_data.py
 
 # mypy
 .mypy_cache/

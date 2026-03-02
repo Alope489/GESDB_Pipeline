@@ -1,7 +1,7 @@
 """Fill Subsystems (Storage Device, Power Conversion System, Balance of System) from web search."""
 import logging
 
-from .helpers import location_string, is_empty
+from .helpers import location_string, is_empty, is_acceptable_text, is_acceptable_value
 from .field_descriptions import get_descriptions_for_fields
 from . import search_client
 from . import llm_extract
@@ -12,13 +12,15 @@ _log = logging.getLogger(__name__)
 
 
 def _empty_subsystem_fields(subsystem: dict) -> list[tuple[str, str]]:
-    """Return list of (section, key) for empty fields in one subsystem."""
+    """Return list of (section, key) for empty fields in one subsystem. Skips keys with mojibake."""
     out = []
     for section in ("Storage Device", "Power Conversion System", "Balance of System"):
         block = subsystem.get(section)
         if not isinstance(block, dict):
             continue
         for k, v in block.items():
+            if not is_acceptable_text(k):
+                continue
             if is_empty(v, k):
                 out.append((section, k))
     return out
@@ -63,7 +65,13 @@ def fill_group(
         for name, v in extracted.items():
             if v is None or " - " not in name:
                 continue
+            if not is_acceptable_text(name):
+                continue
             sec, key = name.split(" - ", 1)
+            if not is_acceptable_text(key):
+                continue
+            if not is_acceptable_value(v):
+                continue
             block = sub.get(sec)
             if not isinstance(block, dict) or key not in block:
                 continue

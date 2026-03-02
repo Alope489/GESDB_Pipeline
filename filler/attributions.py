@@ -4,6 +4,7 @@ import re
 from pathlib import Path
 
 from .config import ATTRIBUTIONS_PATH
+from .helpers import is_acceptable_text, is_acceptable_value
 
 
 def _set_by_path(record: dict, path: str, value) -> None:
@@ -43,6 +44,10 @@ def apply_attributions_to_data(data: list[dict], attributions: list[dict]) -> No
             field = item.get("field")
             val = item.get("value")
             if field is None:
+                continue
+            if not is_acceptable_text(field):
+                continue
+            if not is_acceptable_value(val):
                 continue
             try:
                 _set_by_path(record, field, val)

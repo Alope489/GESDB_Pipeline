@@ -40,6 +40,20 @@ The validation step (`run_validation` in `validation/validation_script.py`) runs
 - **From the pipeline or main process** (`pipeline.py` or `main.py`): validation reads **`data/output/processed_data.json`**, so validation status reflects the current pipeline output.
 - **With no arguments** (e.g. `python -m validation.validation_script` or tests): validation reads **`validation/data/test_data.json`** for development and testing.
 
+### Streamlit app: View and Validate Records / Validated Records
+
+The Streamlit pipeline app has two tabs that work together:
+
+- **View and Validate Records**: You open a record, edit it, and mark each category as validated with "Mark [category] as Validated". When all categories are marked, the record can be set as fully validated. If the validation report (from Step 3) has errors for that record, you are asked to confirm ("Mark as validated anyway" or "Cancel"). If a category is marked validated but has validation errors in the report, a yellow "Validation errors are present." message is shown next to "Unmark [category] as Validated".
+- **Validated Records**: Shows the list of records considered validated. The list is built by **merging** two sources: (1) records that pass the validation report (Step 3 CSV) when it exists and has the same row count as the data, and (2) records you marked as fully validated in View and Validate Records (session state). You can **Save validated records to JSON** (writes `data/output/validated_records.json`) and push to GitHub.
+
+### Architecture
+
+- **Pipeline and data flow**: Main data is **`data/output/processed_data.json`** (one JSON array of record objects). Step 3 (Run Pipeline) runs `validation/validation_script.py` on that file and writes **`validation/output/validation_status.csv`** (and `.json`): one row per record, each cell Validated or Unvalidated per field. The Streamlit app (`pipeline.py`) has three tabs: Run Pipeline, View Records, Validated Records.
+- **View and Validate Records tab**: Loads `processed_data.json` and optionally `validation_status.csv`. For the selected record, `display_record_grouped()` shows categories (from `categorize_data()`). The user marks each category as validated (session state). When all categories are marked: if the validation report has no errors for that record, the record is set fully validated; if the report has errors, the user sees "Mark as validated anyway" / "Cancel" and the two buttons remain until errors go away. If a category is marked validated but the report has errors for that category's fields, a yellow "Validation errors are present." message is shown next to the Unmark button. Validation status is passed in as `val_row` (one row of the validation CSV).
+- **Validated Records tab**: The validated list is **merged** from (1) records that pass the validation CSV when it exists and row count matches data, and (2) records marked fully validated in View and Validate Records (session state keys `record_validated_{index}`). **Save to JSON** writes the current validated list to `data/output/validated_records.json`. **Push to GitHub** pushes selected validated records as JSON files to a repo.
+- **Key functions** (`pipeline.py`): `categorize_data(record)` — groups record keys into UI categories. `display_record_grouped(record, record_id, edit_mode, val_row)` — renders editable record by category, validation toggles, proceed-anyway confirmation, and per-category validation warning. `_category_has_validation_errors(val_row, field_names)` — True if any of the given fields have Unvalidated in the validation row. `_row_fully_validated(val_row)` — True if the validation row has no Unvalidated in any column. `display_validated_records(data)` — builds validated list (CSV + session state), shows JSON expander, Save to JSON button, and GitHub push form.
+
 ---
 
 ## Article Scraper: Overview

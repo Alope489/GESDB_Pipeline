@@ -1,7 +1,7 @@
 """Fill Project Details group from web search."""
 import logging
 
-from .helpers import get_empty_or_unvalidated_fields, is_empty, location_string
+from .helpers import get_empty_or_unvalidated_fields, is_empty, location_string, is_acceptable_text, is_acceptable_value
 from .field_descriptions import get_descriptions_for_fields
 from . import search_client
 from . import llm_extract
@@ -47,6 +47,8 @@ def fill_group(
     fields_filled = []
     for k, v in extracted.items():
         if v is None:
+            continue
+        if not is_acceptable_text(k) or not is_acceptable_value(v):
             continue
         if k not in record or is_empty(record.get(k), k):
             record[k] = v

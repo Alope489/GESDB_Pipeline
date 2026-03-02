@@ -122,7 +122,7 @@ def _format_validation_issues(val_row, code_messages):
 @st.cache_data
 def load_data(file_path):
     try:
-        with open(file_path, "r") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         return data
     except FileNotFoundError:
@@ -372,7 +372,7 @@ def edit_value_widget(label: str, value, widget_key: str):
 
 
 # Render record details by categories with validation
-def display_record_grouped(record, record_id, edit_mode: bool = True):
+def display_record_grouped(record, record_id, edit_mode: bool = True, val_row=None):
     grouped_data = categorize_data(record)
     edited_record = deepcopy(record)
 
@@ -401,23 +401,57 @@ def display_record_grouped(record, record_id, edit_mode: bool = True):
             else:
                 st.write("No data available.")
 
-            # Validation toggle (unchanged behavior)
+            # Validation toggle
             if st.session_state[vs_key][category]:
                 if st.button(f"Unmark {category} as Validated", key=f"{record_id}_{category}_unmark"):
                     st.session_state[vs_key][category] = False
+                if val_row is not None and _category_has_validation_errors(val_row, list(fields.keys())):
+                    st.warning("Validation errors are present.")
             else:
                 if st.button(f"Mark {category} as Validated", key=f"{record_id}_{category}_mark"):
                     st.session_state[vs_key][category] = True
 
     # Overall validation state
     if all(st.session_state[vs_key].values()):
-        st.success("This record is fully validated!")
-        st.session_state[f"record_validated_{record_id}"] = True
+        if val_row is None or _row_fully_validated(val_row):
+            st.success("This record is fully validated!")
+            st.session_state[f"record_validated_{record_id}"] = True
+        else:
+            if st.session_state.get(f"record_validated_{record_id}", False):
+                st.success("This record was fully validated (with errors present).")
+            else:
+                st.warning("This record has validation errors. Do you want to mark it as validated anyway?")
+            col_left, col_right = st.columns([1, 1])
+            with col_left:
+                if st.button("Mark as validated anyway", key=f"confirm_validate_{record_id}", type="primary"):
+                    st.session_state[f"record_validated_{record_id}"] = True
+                    st.rerun()
+            with col_right:
+                if st.button("Cancel", key=f"cancel_validate_{record_id}"):
+                    st.session_state[f"record_validated_{record_id}"] = False
+                    st.rerun()
     else:
         st.warning("Some categories are not validated yet.")
         st.session_state[f"record_validated_{record_id}"] = False
 
     return edited_record
+
+def _category_has_validation_errors(val_row, field_names):
+    """True if any column in val_row for the given field names has Unvalidated flag."""
+    if val_row is None or not hasattr(val_row, "index"):
+        return False
+    skip = {"Index", "ID"}
+    for col in val_row.index:
+        if col in skip or col not in field_names:
+            continue
+        parsed = _parse_validation_cell(val_row[col])
+        if not parsed:
+            continue
+        entry = parsed[0] if isinstance(parsed[0], dict) else {}
+        if entry.get("flag", "").lower() == "unvalidated":
+            return True
+    return False
+
 
 def _row_fully_validated(val_row):
     """True if validation status row has no Unvalidated flags (from run_validation CSV)."""
@@ -439,19 +473,21 @@ def display_validated_records(data):
 
     validation_status = load_validation_status(VALIDATION_STATUS_FILE)
     validated_records = []
+    from_csv = set()
     if validation_status is not None and hasattr(validation_status, "empty") and not validation_status.empty and len(validation_status) == len(data):
         for idx in range(len(data)):
             if idx < len(validation_status) and _row_fully_validated(validation_status.iloc[idx]):
                 validated_records.append(data[idx])
-    else:
-        for idx, record in enumerate(data):
-            if st.session_state.get(f"record_validated_{idx}", False):
-                validated_records.append(record)
-        if validation_status is None or (hasattr(validation_status, "empty") and validation_status.empty):
-            st.info("Run **Step 3: Validation** in the Run Pipeline tab, then return here to see records that passed validation.")
-        elif validation_status is not None and len(validation_status) != len(data):
-            st.warning("Validation row count does not match data. Re-run **Step 3: Validation** in the Run Pipeline tab.")
-
+                from_csv.add(idx)
+    for idx, record in enumerate(data):
+        if st.session_state.get(f"record_validated_{idx}", False) and idx not in from_csv:
+            validated_records.append(record)
+    if not validated_records and (validation_status is None or (hasattr(validation_status, "empty") and validation_status.empty)):
+        st.info("No validation report found. Mark all categories as validated in **View and Validate Records** for each record you want here, or run **Step 3: Validation** in the Run Pipeline tab to use the validation report.")
+    elif not validated_records and validation_status is not None and len(validation_status) != len(data):
+        st.warning("Validation row count does not match data. Re-run **Step 3: Validation** in the Run Pipeline tab, or mark records as validated in **View and Validate Records**.")
+    elif not validated_records:
+        st.info("No records are fully validated yet. Mark all categories as validated in **View and Validate Records** for each record you want here, or fix validation errors and re-run Step 3.")
     st.write(f"Total validated records: {len(validated_records)}")
 
     if validated_records:
@@ -459,8 +495,15 @@ def display_validated_records(data):
             for record in validated_records:
                 st.markdown(f"### Record ID: {record.get('ID', 'Unknown')}")
                 st.json(record)
+        st.subheader("Save validated records to JSON")
+        if st.button("Save validated records to JSON", key="save_validated_json"):
+            out_path = _DATA_DIR / "data" / "output" / "validated_records.json"
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(validated_records, f, indent=2, ensure_ascii=False)
+            st.success(f"Saved {len(validated_records)} record(s) to {out_path}.")
     else:
-        st.info("No records have been fully validated yet. You can still save your GitHub token below so you don’t have to paste it later.")
+        st.caption("You can save your GitHub token below so it is prefilled when you have validated records.")
 
     st.markdown("---")
     st.subheader("Push validated records to GitHub")
@@ -556,8 +599,12 @@ def view_records_tab():
         selected_record = deepcopy(data[selected_index])
         st.markdown(f"### Record ID: {ids[selected_index]}")
 
+        val_row = None
+        if validation_status is not None and hasattr(validation_status, "empty") and not validation_status.empty and selected_index < len(validation_status):
+            val_row = validation_status.iloc[selected_index]
+
         # Editable grouped UI → returns the edited copy
-        edited_record = display_record_grouped(selected_record, selected_index, edit_mode=True)
+        edited_record = display_record_grouped(selected_record, selected_index, edit_mode=True, val_row=val_row)
 
         # Save / Revert buttons
         c1, c2 = st.columns([1, 1])

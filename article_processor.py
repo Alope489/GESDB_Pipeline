@@ -59,7 +59,7 @@ class ArticleProcessor:
     def load_processed_urls(self):
         # Load already processed URLs from the file
         if os.path.exists(self.processed_urls_file):
-            with open(self.processed_urls_file, 'r') as file:
+            with open(self.processed_urls_file, 'r', encoding='utf-8') as file:
                 processed_urls = set(line.strip() for line in file)
             print(f"Loaded {len(processed_urls)} processed URLs.")
             return processed_urls
@@ -68,7 +68,7 @@ class ArticleProcessor:
     def load_articles(self):
         # Load input JSON data
         print(f"Loading articles from {self.input_path}...")
-        with open(self.input_path, 'r') as file:
+        with open(self.input_path, 'r', encoding='utf-8') as file:
             articles = json.load(file)
         print(f"Loaded {len(articles)} articles.")
         return articles
@@ -79,21 +79,21 @@ class ArticleProcessor:
 
         # Check if output file already has data
         if os.path.exists(self.output_path):
-            with open(self.output_path, 'r') as file:
+            with open(self.output_path, 'r', encoding='utf-8') as file:
                 existing_data = json.load(file)
         else:
             existing_data = []
 
         # Append new data and save
         existing_data.append(data)
-        with open(self.output_path, 'w') as file:
+        with open(self.output_path, 'w', encoding='utf-8') as file:
             json.dump(existing_data, file, indent=4)
         
         print(f"Processed data saved to {self.output_path}.")
 
     def add_to_processed_urls(self, url):
         # Append the new URL to the processed URLs file in /data/input/
-        with open(self.processed_urls_file, 'a') as file:
+        with open(self.processed_urls_file, 'a', encoding='utf-8') as file:
             file.write(f"{url}\n")
         self.processed_urls.add(url)
         print(f"URL added to processed list: {url}")

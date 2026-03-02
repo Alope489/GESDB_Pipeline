@@ -1,5 +1,38 @@
-"""Shared helpers: is_empty check and building search context from record."""
+"""Shared helpers: is_empty check, encoding validation, and building search context from record."""
+import re
+
 from .config import CATEGORY_KEYS, FIELDS_REQUIRE_POSITIVE
+
+# Mojibake indicators (UTF-8 misinterpreted as Latin-1/Windows-1252)
+_MOJIBAKE_PATTERN = re.compile(
+    r"\uFFFD|Ãƒ|Ã¢|Ã©|Ã¨|Ã |Â°.*Ã|Ã†|Ã‚Â|Ã¢â‚¬|Ã¢â€šÂ¬|Ã…Â¡|Ã¢â‚¬Å¡|Ãƒâ€š"
+)
+
+
+def is_acceptable_text(s: str) -> bool:
+    """Return False if the string is None, contains replacement char, mojibake patterns, or invalid UTF-8."""
+    if s is None or not isinstance(s, str):
+        return False
+    if "\uFFFD" in s:
+        return False
+    if _MOJIBAKE_PATTERN.search(s):
+        return False
+    try:
+        s.encode("utf-8", errors="strict")
+    except UnicodeEncodeError:
+        return False
+    return True
+
+
+def is_acceptable_value(value) -> bool:
+    """Return True for None, numbers, bool; for str use is_acceptable_text."""
+    if value is None:
+        return True
+    if isinstance(value, (int, float, bool)):
+        return True
+    if isinstance(value, str):
+        return is_acceptable_text(value)
+    return False
 
 
 # Placeholder strings treated as empty (case-insensitive). None/null are always empty.
