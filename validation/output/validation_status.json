@@ -844,7 +844,7 @@
     "Storage Device - Energy Density (kWh/m3)": null,
     "Storage Device - Footprint (m2/MWh)": null,
     "Balance of System - Transformer Rating (kW)": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -868,8 +868,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -1717,7 +1718,7 @@
     "Storage Device - Energy Density (kWh/m3)": null,
     "Storage Device - Footprint (m2/MWh)": null,
     "Balance of System - Transformer Rating (kW)": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -1741,8 +1742,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -2541,7 +2543,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -2572,8 +2574,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -3365,7 +3368,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -3396,8 +3399,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -4189,7 +4193,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -4220,8 +4224,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -5013,7 +5018,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -5044,8 +5049,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -5837,7 +5843,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -5868,8 +5874,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -6535,7 +6542,7 @@
     "Storage Device - Energy Density (kWh/m3)": null,
     "Storage Device - Footprint (m2/MWh)": null,
     "Balance of System - Transformer Rating (kW)": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": [
       {
         "flag": "Validated",
@@ -6720,8 +6727,9 @@
         "timestamp": "03/01/26"
       }
     ],
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -7513,7 +7521,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -7551,8 +7559,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -8344,7 +8353,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -8375,8 +8384,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -9168,7 +9178,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -9199,8 +9209,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -9329,7 +9340,7 @@
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
-        "error_codes": "102, 202",
+        "error_codes": "",
         "timestamp": "03/01/26"
       }
     ],
@@ -9433,7 +9444,7 @@
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
-        "error_codes": "102, 202",
+        "error_codes": "",
         "timestamp": "03/01/26"
       }
     ],
@@ -9745,7 +9756,7 @@
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
-        "error_codes": "102, 202",
+        "error_codes": "",
         "timestamp": "03/01/26"
       }
     ],
@@ -9992,7 +10003,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -10023,8 +10034,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -10257,7 +10269,7 @@
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
-        "error_codes": "102, 202",
+        "error_codes": "",
         "timestamp": "03/01/26"
       }
     ],
@@ -10569,7 +10581,7 @@
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
-        "error_codes": "102, 202",
+        "error_codes": "",
         "timestamp": "03/01/26"
       }
     ],
@@ -10816,7 +10828,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -10847,8 +10859,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -11640,7 +11653,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -11671,8 +11684,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -12464,7 +12478,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -12495,8 +12509,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -13288,7 +13303,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -13319,8 +13334,9 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -14112,7 +14128,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -14136,7 +14152,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -14144,7 +14160,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -14936,7 +14953,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -14960,7 +14977,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -14968,7 +14985,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -15760,7 +15778,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -15784,7 +15802,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -15792,7 +15810,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -16584,7 +16603,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -16608,7 +16627,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -16616,7 +16635,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -17408,7 +17428,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -17432,7 +17452,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -17440,7 +17460,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -18232,7 +18253,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -18256,7 +18277,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -18264,7 +18285,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -19056,7 +19078,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -19080,7 +19102,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -19088,7 +19110,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -19880,7 +19903,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -19904,7 +19927,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -19912,7 +19935,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -20704,7 +20728,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -20728,7 +20752,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -20736,7 +20760,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -21528,7 +21553,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -21552,7 +21577,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -21560,7 +21585,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -22352,7 +22378,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -22376,7 +22402,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -22384,7 +22410,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -23176,7 +23203,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -23200,7 +23227,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -23208,7 +23235,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -24000,7 +24028,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -24024,7 +24052,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -24032,7 +24060,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -24824,7 +24853,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -24848,7 +24877,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -24856,7 +24885,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -25648,7 +25678,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -25672,7 +25702,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -25680,7 +25710,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -26493,7 +26524,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -26517,7 +26548,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -26525,7 +26556,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -27338,7 +27370,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -27362,7 +27394,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -27370,7 +27402,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -28057,7 +28090,7 @@
     "Storage Device - Energy Density (kWh/m3)": null,
     "Storage Device - Footprint (m2/MWh)": null,
     "Balance of System - Transformer Rating (kW)": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -28214,8 +28247,9 @@
         "timestamp": "03/01/26"
       }
     ],
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -29028,7 +29062,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -29052,7 +29086,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -29060,7 +29094,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -29873,7 +29908,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -29897,7 +29932,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -29905,7 +29940,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -30718,7 +30754,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -30742,7 +30778,7 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -30750,7 +30786,8 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -31563,7 +31600,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -31587,8 +31624,8 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": [
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": [
       {
         "flag": "Validated",
         "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
@@ -31596,6 +31633,7 @@
         "timestamp": "03/01/26"
       }
     ],
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": null
   },
   {
@@ -32408,7 +32446,7 @@
         "timestamp": "03/01/26"
       }
     ],
-    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Storage Device - Broad Category": null,
     "Storage Device - Mid Type": null,
     "Storage Device - Sub Type": null,
@@ -32432,8 +32470,1701 @@
     "Power Conversion System - Standby Energy Consumption": null,
     "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
     "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
-    "Balance of System - Operating Temperature (\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Operating Temperature (\u00b0C)": null
+  },
+  {
+    "Index": 39,
+    "ID": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Data Source": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Project/Plant Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Status": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Rated Power (kW)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": " Upper range is NOT provided and was not checked. Value for this field should be greater than 0.",
+        "error_codes": "203",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Capacity (kWh)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Discharge Duration at Rated Power (hrs)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": " Upper range is NOT provided and was not checked. Value for this field should be greater than 0.",
+        "error_codes": "203",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Applications": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "At least one of the applications is not within the list of valid values",
+        "error_codes": "702",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Paired Grid Resources": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Description/Notes": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "URL": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Country": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "City": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "County": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "State/Province/Territory": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.",
+        "error_codes": "101, 201",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Street Address": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Postal Code": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Latitude": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Longitude": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Announced Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Constructed Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Commissioned Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Decommissioned Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Latest Update Date": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Project Data Validated?": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Grid Interconnection Level": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Interconnection Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "ISO/RTO": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "System Operator": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Utility Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Utility ID": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Number of Subsystems": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.",
+        "error_codes": "101, 201",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Energy Storage Technology Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Electronics Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Installer": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Developer": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "O&M Contractor": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 1": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 2": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 3": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Ownership Model": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Ownership Model (Other)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Owner(s)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Captial Expenditure - CAPEX (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Annual Operational Cost - OPEX (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Annual Maintenance or Warranty Cost (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Projected Payback Period (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Debt Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 1": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 1 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 2": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 2 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 3": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 3 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Email Address": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Phone Number": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Subsystem Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Subsystem ID": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Required data type is float.",
+        "error_codes": "105",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Broad Category": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Technology broad category is NOT in list of valid values.",
+        "error_codes": "6402",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Mid-Type": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.Technology Mid-Type field is empty, this is a REQUIRED field.",
+        "error_codes": "101, 201, 6501",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Sub-Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Storage Capacity (kWh)": null,
+    "Storage Device - Round-trip Efficiency (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Depth of Discharge (%)": null,
+    "Storage Device - Warranty Lifetime (cycles)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Warranty Lifetime (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Storage Operating Temperature (deg C)": null,
+    "Storage Device - Specific Energy (kWh/ton-metric)": null,
+    "Storage Device - Energy Density (kWh/m^3)": null,
+    "Storage Device - Footprint (m^2/MWh)": null,
+    "Storage Device - Number of Cells": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Rated Power (kW)": null,
+    "Power Conversion System - Maximum Charge Power (kW)": null,
+    "Power Conversion System - Maximum Discharge Power (kW)": null,
+    "Power Conversion System - Overload Capability (%)": null,
+    "Power Conversion System - Time Allowed for Overload (s)": null,
+    "Power Conversion System - Ramping Rate (kW/min)": null,
+    "Power Conversion System - Response Time (s)": null,
+    "Power Conversion System - Nominal DC Voltage (kV)": null,
+    "Power Conversion System - Nominal AC Voltage (kV)": null,
+    "Power Conversion System - Nominal Frequency (Hz)": null,
+    "Power Conversion System - Operating Frequency Range (Hz) Low": null,
+    "Power Conversion System - Operating Frequency Range (Hz) High": null,
+    "Power Conversion System - Number of Phases": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Topology": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Full Load Efficiency (%)": null,
+    "Power Conversion System - Efficiency Degradation": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Standby Energy Consumption (kWh)": null,
+    "Power Conversion System - Lagging Power Factor Range": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Leading Power Factor Range": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Total Current Harmonic Distortion (%)": null,
+    "Power Conversion System - Frequency Ride Through (FRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Low Voltage Ride Through (LVRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - High Voltage Ride Through (HVRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Warranty Lifetime (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Transformer Rating": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Transformer Configuration": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Enclosure Operating Temperature (deg C)": null,
+    "Balance of System - Operating Temperature (deg C)": null,
+    "Balance of System - Communications": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Enclosures": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Controller Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "State/Province": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Capital Expenditure - CAPEX (USD)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Required data type is text.",
+        "error_codes": "103",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Energy Density (kWh/m3)": null,
+    "Storage Device - Footprint (m2/MWh)": null,
+    "Balance of System - Transformer Rating (kW)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Storage Device - Broad Category": null,
+    "Storage Device - Mid Type": null,
+    "Storage Device - Sub Type": null,
+    "Storage Device - Round-trip Efficiency": null,
+    "Storage Device - Depth of Discharge": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Specific Energy": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Energy Density": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Footprint": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Charge Power": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Discharge Power": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Overload Capability": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Time Allowed for Overload": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Ramping Rate": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Response Time": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal DC Voltage": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal AC Voltage": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal Frequency": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Operating Frequency Range (Low)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Operating Frequency Range (High)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Full Load Efficiency": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Standby Energy Consumption": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Total Current Harmonic Distortion": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Operating Temperature": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00b0C)": null
+  },
+  {
+    "Index": 40,
+    "ID": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Data Source": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Project/Plant Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Status": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Rated Power (kW)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Capacity (kWh)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": " Upper range is NOT provided and was not checked. Value for this field should be greater than 0.",
+        "error_codes": "203",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Discharge Duration at Rated Power (hrs)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": " Upper range is NOT provided and was not checked. Value for this field should be greater than 0.",
+        "error_codes": "203",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Applications": [
+      {
+        "flag": "Validated",
+        "flag_description": "Data Type Match, Specified applications are within the list of valid values.",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Paired Grid Resources": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Description/Notes": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "URL": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Country": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "City": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "County": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "State/Province/Territory": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.",
+        "error_codes": "101, 201",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Street Address": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Postal Code": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Latitude": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Required data type is float.",
+        "error_codes": "105",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Longitude": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Announced Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Constructed Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Commissioned Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Decommissioned Date": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Data is NOT in format MM:DD:YYYY.",
+        "error_codes": "107",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Latest Update Date": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Project Data Validated?": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Grid Interconnection Level": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Interconnection Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "ISO/RTO": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "System Operator": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Utility Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Utility ID": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Number of Subsystems": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.",
+        "error_codes": "101, 201",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Energy Storage Technology Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Electronics Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Installer": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Developer": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "O&M Contractor": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 1": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 2": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "EPC 3": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Ownership Model": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Ownership Model (Other)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Owner(s)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Captial Expenditure - CAPEX (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Annual Operational Cost - OPEX (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Annual Maintenance or Warranty Cost (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Projected Payback Period (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Debt Provider": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 1": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 1 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 2": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 2 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source 3": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Funding Source Amount 3 (USD)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Email Address": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Contact Information: Phone Number": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Subsystem Name": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Subsystem ID": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Broad Category": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.Technology Broad Category field is empty, this is a REQUIRED field.",
+        "error_codes": "101, 201, 6401",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Mid-Type": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Missing data - Entry is required for this field.Missing data - Unable to validate data range.Technology Mid-Type field is empty, this is a REQUIRED field.",
+        "error_codes": "101, 201, 6501",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Technology Sub-Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Storage Capacity (kWh)": null,
+    "Storage Device - Round-trip Efficiency (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Depth of Discharge (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Warranty Lifetime (cycles)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Warranty Lifetime (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Storage Operating Temperature (deg C)": null,
+    "Storage Device - Specific Energy (kWh/ton-metric)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Energy Density (kWh/m^3)": null,
+    "Storage Device - Footprint (m^2/MWh)": null,
+    "Storage Device - Number of Cells": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Rated Power (kW)": null,
+    "Power Conversion System - Maximum Charge Power (kW)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Discharge Power (kW)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Overload Capability (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Time Allowed for Overload (s)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Ramping Rate (kW/min)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Response Time (s)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal DC Voltage (kV)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal AC Voltage (kV)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Nominal Frequency (Hz)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Operating Frequency Range (Hz) Low": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Operating Frequency Range (Hz) High": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Number of Phases": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Topology": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Full Load Efficiency (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Efficiency Degradation": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Standby Energy Consumption (kWh)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Lagging Power Factor Range": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Leading Power Factor Range": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Maximum Total Current Harmonic Distortion (%)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Frequency Ride Through (FRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Low Voltage Ride Through (LVRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - High Voltage Ride Through (HVRT)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Power Conversion System - Warranty Lifetime (years)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Transformer Rating": null,
+    "Balance of System - Transformer Configuration": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Enclosure Operating Temperature (deg C)": null,
+    "Balance of System - Operating Temperature (deg C)": null,
+    "Balance of System - Communications": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Enclosures": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Controller Type": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "State/Province": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Capital Expenditure - CAPEX (USD)": [
+      {
+        "flag": "Unvalidated",
+        "flag_description": "Required data type is text.",
+        "error_codes": "103",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Energy Density (kWh/m3)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Storage Device - Footprint (m2/MWh)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Transformer Rating (kW)": [
+      {
+        "flag": "Validated",
+        "flag_description": "All validation checks passed. Some optional data may still be missing, check error codes",
+        "error_codes": "102, 202",
+        "timestamp": "03/01/26"
+      }
+    ],
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u2020\u00e2\u20ac\u2122\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u2026\u00c2\u00a1\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Storage Device - Broad Category": null,
+    "Storage Device - Mid Type": null,
+    "Storage Device - Sub Type": null,
+    "Storage Device - Round-trip Efficiency": null,
+    "Storage Device - Depth of Discharge": null,
+    "Storage Device - Specific Energy": null,
+    "Storage Device - Energy Density": null,
+    "Storage Device - Footprint": null,
+    "Power Conversion System - Maximum Charge Power": null,
+    "Power Conversion System - Maximum Discharge Power": null,
+    "Power Conversion System - Overload Capability": null,
+    "Power Conversion System - Time Allowed for Overload": null,
+    "Power Conversion System - Ramping Rate": null,
+    "Power Conversion System - Response Time": null,
+    "Power Conversion System - Nominal DC Voltage": null,
+    "Power Conversion System - Nominal AC Voltage": null,
+    "Power Conversion System - Nominal Frequency": null,
+    "Power Conversion System - Operating Frequency Range (Low)": null,
+    "Power Conversion System - Operating Frequency Range (High)": null,
+    "Power Conversion System - Full Load Efficiency": null,
+    "Power Conversion System - Standby Energy Consumption": null,
+    "Power Conversion System - Maximum Total Current Harmonic Distortion": null,
+    "Balance of System - Operating Temperature": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00c6\u2019\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u00a1\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c3\u0192\u00e2\u20ac\u0161\u00c3\u201a\u00c2\u00b0C)": null,
+    "Balance of System - Operating Temperature (\u00c2\u00b0C)": null,
     "Balance of System - Operating Temperature (\u00b0C)": [
       {
         "flag": "Validated",

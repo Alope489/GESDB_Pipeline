@@ -101,9 +101,6 @@ class ArticleProcessor:
     def process_articles(self):
         articles = self.load_articles()
 
-    def process_articles(self):
-        articles = self.load_articles()
-
         try:
             for idx, article in enumerate(articles, start=1):
                 # Respect processing limit

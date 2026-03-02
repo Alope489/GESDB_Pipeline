@@ -94,6 +94,15 @@ The scraper includes error handling for:
 
 The **Article Processor** is designed to process structured information from scraped articles, ensuring accurate, validated data output. Using LangChain and the OpenAI API, it employs a modular, tool-based approach to flexibly extract specific data points, making it adaptable across various domains. Here’s a breakdown of its structure and layout:
 
+### Article processing flow
+
+1. **Load** articles from the input JSON file.
+2. **Extract** (per article): `extract_all` runs all registered tools on the article text in **parallel** (configurable concurrency). Each tool calls the LLM once; multiple tools run concurrently to reduce total time per article.
+3. **Post-process** the combined tool results.
+4. **Save** the processed record and mark the article URL as processed.
+
+If the OpenAI API returns a rate limit (429), the extractor **logs** the event, **waits** (using the `Retry-After` response header when present, otherwise a fixed default), then **retries** the failed tool(s) with **reduced concurrency** (fewer parallel workers). Rate-limit events are logged so you can monitor and tune concurrency or API tier.
+
 ## Code Structure and File Layout
 
 - **`article_processor.py`**: This file orchestrates the scraping and extraction process. It initializes the `Extractor`, registers extraction tools, and runs the extraction on scraped article data.
@@ -104,7 +113,7 @@ The **Article Processor** is designed to process structured information from scr
   - **`extractor.py`**: Defines the core `Extractor` class, which interacts with the OpenAI API through LangChain’s `ChatOpenAI`. Key methods include:
     - **`register_tool`**: Registers individual tools, making it easy to expand the Extractor's capabilities by adding or modifying tools.
     - **`extract`**: Extracts information based on a registered tool, validating data against specified schemas.
-    - **`extract_all`**: Applies all registered tools to a given text, ensuring a comprehensive extraction.
+    - **`extract_all`**: Runs all registered tools on the article text in parallel (see Article processing flow above). On OpenAI rate limit (429), logs, waits, and retries with reduced concurrency.
 
   - **`tools/`**:
     - **`project_info_tool.py`**: Example of a modular extraction tool. This tool uses a Pydantic schema (`ProjectInfoSchema`) to extract project-related data, validating fields like `project_name`, `rated_power`, and `status` against the schema.
@@ -138,7 +147,16 @@ The **Article Processor** is designed to process structured information from scr
 ## Extractor Class Details
 
 - **`tools`**: Dictionary to store and reference the registered extraction tools.
-- **`extract_all()`**: Runs all registered tools on a given text, aggregating results from each tool's output.
+- **`extract_all()`**: Runs all registered tools on a given text in parallel, aggregating results from each tool's output. On rate limit (429), logs the event, waits (Retry-After or default), then retries with reduced concurrency.
+
+### Extractor constructor parameters (parallel and rate-limit behaviour)
+
+- **`max_workers`** (default: 8): Maximum number of tools run in parallel per article.
+- **`min_workers`** (default: 1): Minimum concurrency after reducing on rate limit (floor when halving).
+- **`rate_limit_retry_delay_seconds`** (default: 60): Seconds to wait before retry when the API does not send a `Retry-After` header.
+- **`max_rate_limit_retries`** (default: 3): Maximum retries for rate limit (429) per article batch before raising.
+
+Rate-limit events are logged (e.g. when a 429 is hit, wait time, and concurrency reduction).
 
 ## Methods in ArticleProcessor
 
