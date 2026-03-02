@@ -2,10 +2,13 @@
 import pytest
 import datetime
 import pandas as pd
-from .validation_functions import validate_data_range
+from pathlib import Path
 from datetime import date
-from .validation_functions import *
-from .errorcodes import *
+from validation.validation_functions import validate_data_range
+from validation.validation_functions import *
+from validation.errorcodes import *
+
+_TEST_DATA_JSON = Path(__file__).resolve().parent / "data" / "test_data.json"
 
 
 def test_validate_data_range():
@@ -15,7 +18,7 @@ def test_validate_data_range():
 
     # Load test data
     # Read the database test JSON file for testing purposes
-    df_GESDB = pd.read_json(r'data/test_data.json')
+    df_GESDB = pd.read_json(str(_TEST_DATA_JSON))
 
     # - assertion 1: both lower and upper range not provided
     des = validate_data_range(data=df_GESDB['Data Source'][1],
@@ -88,7 +91,7 @@ def test_validate_data_type():
 
     # Load test data
     # Read the database test JSON file for testing purposes
-    df_GESDB = pd.read_json(r'data/test_data.json')
+    df_GESDB = pd.read_json(str(_TEST_DATA_JSON))
 
     # - assertion 1: data is empty and required
     des = validate_data_type(data=df_GESDB['Project/Plant Name'][1],

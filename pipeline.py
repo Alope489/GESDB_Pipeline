@@ -15,7 +15,6 @@ from pathlib import Path
 from article_scraper import collect_articles
 from article_processor import ArticleProcessor  # For step 2
 from validation.validation_script import run_validation  # For step 3
-import data_insert  # For step 4
 
 # Placeholder for the pipeline tab layout
 SITE_CONFIGS = [
@@ -538,9 +537,11 @@ def display_validated_records(data):
 def view_records_tab():
     st.header("View and Validate Records")
 
-    # Refresh Data Button
+    if st.session_state.get("data_stale"):
+        st.warning("Data may be stale. Click **Refresh Data** to load the latest from the pipeline.")
     if st.button("Refresh Data", key="refresh_view_records"):
         st.cache_data.clear()
+        st.session_state["data_stale"] = False
 
     # Load processed data and (optionally) validation status
     data = load_data(DATA_FILE_PATH)
@@ -677,6 +678,7 @@ def pipeline_tab():
             try:
                 processor = ArticleProcessor(input_path=input_path, output_path=output_path, api_key=api_key, limit=(None if limit == 0 else limit))
                 processor.process_articles()
+                st.session_state["data_stale"] = True
                 st.success("Article processing complete.")
             except Exception as e:
                 st.error(f"Error during article processing: {e}")
@@ -688,41 +690,32 @@ def pipeline_tab():
             try:
                 run_validation(DATA_FILE_PATH)
                 st.cache_data.clear()
+                st.session_state["data_stale"] = True
                 st.success("Validation complete. Open View Records or Validated Records to see results.")
-                st.rerun()
             except Exception as e:
                 st.error(f"Error during validation: {e}")
 
-    with st.expander("Step 4: Data Insertion (experimental feature)"):
-        if st.button("Run Data Insertion"):
-            st.write("Running data insertion step...")
-
-            try:
-                data_insert.process_data()
-                st.success("Data insertion complete.")
-            except Exception as e:
-                st.error(f"Error during data insertion: {e}")
-
-    with st.expander("Step 5: Data Filler (web search)"):
+    with st.expander("Step 4: Data Filler (web search)"):
         st.caption("Fills missing/null/zero fields in processed_data.json using web search and LLM. Uses SEARCH_API_KEY and OPENAI_API_KEY from .env. If you see 'no module called serpapi', run: pip install google-search-results")
-        start_filler = st.number_input("Start from record index (0 = first)", min_value=0, value=0, step=1, key="filler_start")
+        start_filler = st.number_input("Start from record number (1 = first)", min_value=1, value=1, step=1, key="filler_start")
         limit_filler = st.number_input("Number of records to process (0 = all from start)", min_value=0, value=0, step=1, key="filler_limit")
         debug_filler = st.checkbox("Debug (log steps to console)", value=False, key="filler_debug")
         if st.button("Run Data Filler"):
             try:
                 from filler.run_filler import run
-                n, modified, attrs = run(
-                    data_path=Path(DATA_FILE_PATH),
-                    attributions_path=Path(DATA_FILE_PATH).parent / "filler_attributions.json",
-                    limit_records=(None if limit_filler == 0 else limit_filler),
-                    start_record_index=start_filler,
-                    debug=debug_filler,
-                )
+                with st.spinner("Data filler is running… This may take a while. Do not close the tab."):
+                    n, modified, attrs = run(
+                        data_path=Path(DATA_FILE_PATH),
+                        attributions_path=Path(DATA_FILE_PATH).parent / "filler_attributions.json",
+                        limit_records=(None if limit_filler == 0 else limit_filler),
+                        start_record_index=start_filler - 1,
+                        debug=debug_filler,
+                    )
                 st.cache_data.clear()
+                st.session_state["data_stale"] = True
                 st.success(f"Filler complete: {n} record(s) processed, {modified} modified, {attrs} attribute(s) filled. Open View Records or Validated Records to see updates.")
                 if n > 0 and attrs == 0:
                     st.warning("No attributes were filled. If you expected fills, check that SEARCH_API_KEY and OPENAI_API_KEY are set in .env in the project root and that the keys are valid.")
-                st.rerun()
             except Exception as e:
                 err = str(e)
                 st.error(f"Error during data filler: {e}")
@@ -747,6 +740,11 @@ def main():
 
     # Tab 3: Validated records
     with tabs[2]:
+        if st.session_state.get("data_stale"):
+            st.warning("Data may be stale. Click **Refresh Data** to load the latest from the pipeline.")
+        if st.button("Refresh Data", key="refresh_validated_records"):
+            st.cache_data.clear()
+            st.session_state["data_stale"] = False
         data = load_data(DATA_FILE_PATH)
         if data:
             display_validated_records(data)

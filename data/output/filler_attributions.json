@@ -664,5 +664,324 @@
     "fields_filled": [],
     "source": "web_search",
     "note": "no values extracted"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [
+      {
+        "field": "Project/Plant Name",
+        "value": "Schwerin-WEMAG Younicos - Battery Energy Storage System 1",
+        "source": "web_search"
+      },
+      {
+        "field": "Status",
+        "value": "Operational",
+        "source": "web_search"
+      },
+      {
+        "field": "Rated Power (kW)",
+        "value": 5000,
+        "source": "web_search"
+      },
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 5000,
+        "source": "web_search"
+      },
+      {
+        "field": "Description/Notes",
+        "value": "The Schwerin-WEMAG Younicos - Battery Energy Storage System 1 is a 5000kW energy storage project located in Schwerin, Mecklenburg-Vorpommern.",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [
+      {
+        "field": "County",
+        "value": "Mecklenburg-Vorpommern",
+        "source": "web_search"
+      },
+      {
+        "field": "Latitude",
+        "value": 53.6295,
+        "source": "web_search"
+      },
+      {
+        "field": "Longitude",
+        "value": 11.4132,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [
+      {
+        "field": "Grid Interconnection Level",
+        "value": "Distribution",
+        "source": "web_search"
+      },
+      {
+        "field": "Interconnection Type",
+        "value": "AC",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [
+      {
+        "field": "Funding Source 3",
+        "value": "Wemag",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source Amount 3 (USD)",
+        "value": 5600000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 7,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Power Conversion System.Maximum Discharge Power (kW)",
+        "value": 5000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "Schwerin",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [
+      {
+        "field": "Announced Date",
+        "value": "01-01-2013",
+        "source": "web_search"
+      },
+      {
+        "field": "Constructed Date",
+        "value": "03-01-2017",
+        "source": "web_search"
+      },
+      {
+        "field": "Commissioned Date",
+        "value": "01-01-2014",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [
+      {
+        "field": "Utility Type",
+        "value": "State/municipal-owned",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [
+      {
+        "field": "Funding Source 1",
+        "value": "Younicos",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 8,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Storage Device.Sub Type",
+        "value": "lithium-ion",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [
+      {
+        "field": "Storage Capacity (kWh)",
+        "value": 480000,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [
+      {
+        "field": "State/Province/Territory",
+        "value": "Texas",
+        "source": "web_search"
+      },
+      {
+        "field": "Postal Code",
+        "value": 78204,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [
+      {
+        "field": "Capital Expenditure - CAPEX (USD)",
+        "value": 385000000,
+        "source": "web_search"
+      },
+      {
+        "field": "Debt Provider",
+        "value": "ING Capital LLC",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 1",
+        "value": "OCI Energy",
+        "source": "web_search"
+      },
+      {
+        "field": "Funding Source 2",
+        "value": "Arava Power",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [
+      {
+        "field": "Latitude",
+        "value": 29.271667,
+        "source": "web_search"
+      },
+      {
+        "field": "Longitude",
+        "value": -98.444722,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 11,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [
+      {
+        "field": "Street Address",
+        "value": "Tofte, Hurum, Norway",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [
+      {
+        "field": "System Operator",
+        "value": "Statkraft",
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [],
+    "source": "web_search",
+    "note": "no values extracted"
+  },
+  {
+    "record_id": 12,
+    "fields_filled": [
+      {
+        "field": "Subsystems[0].Power Conversion System.Maximum Discharge Power (kW)",
+        "value": 10,
+        "source": "web_search"
+      }
+    ],
+    "source": "web_search",
+    "subsystem_index": 0
   }
 ]
