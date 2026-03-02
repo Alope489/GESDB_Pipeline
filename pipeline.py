@@ -1,4 +1,5 @@
 import ast
+import math
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -372,7 +373,7 @@ def edit_value_widget(label: str, value, widget_key: str):
 
 
 # Render record details by categories with validation
-def display_record_grouped(record, record_id, edit_mode: bool = True, val_row=None):
+def display_record_grouped(record, record_id, edit_mode: bool = True, val_row=None, form_version: int = 0):
     grouped_data = categorize_data(record)
     edited_record = deepcopy(record)
 
@@ -386,7 +387,7 @@ def display_record_grouped(record, record_id, edit_mode: bool = True, val_row=No
             if fields:
                 for key, value in fields.items():
                     label = f"**{key}:**"
-                    wid_key = f"edit_{record_id}_{_slug(category)}_{_slug(key)}"
+                    wid_key = f"edit_{record_id}_{form_version}_{_slug(category)}_{_slug(key)}"
                     if edit_mode:
                         new_val = edit_value_widget(label, value, wid_key)
                         # write back into edited_record
@@ -451,6 +452,23 @@ def _category_has_validation_errors(val_row, field_names):
         if entry.get("flag", "").lower() == "unvalidated":
             return True
     return False
+
+
+def _normalize_for_compare(val):
+    """Normalize a value so widget artifacts (e.g. '' vs None, 1.0 vs 1, NaN) don't count as changes."""
+    if val is None or val == "":
+        return None
+    if isinstance(val, float) and math.isnan(val):
+        return None
+    if isinstance(val, dict):
+        return {k: _normalize_for_compare(v) for k, v in val.items()}
+    if isinstance(val, list):
+        return [_normalize_for_compare(v) for v in val]
+    if isinstance(val, float) and val == int(val):
+        return int(val)
+    if hasattr(val, "item"):  # numpy scalar
+        return _normalize_for_compare(val.item())
+    return val
 
 
 def _row_fully_validated(val_row):
@@ -603,32 +621,35 @@ def view_records_tab():
         if validation_status is not None and hasattr(validation_status, "empty") and not validation_status.empty and selected_index < len(validation_status):
             val_row = validation_status.iloc[selected_index]
 
+        form_version = st.session_state.get(f"edit_form_version_{selected_index}", 0)
         # Editable grouped UI → returns the edited copy
-        edited_record = display_record_grouped(selected_record, selected_index, edit_mode=True, val_row=val_row)
+        edited_record = display_record_grouped(selected_record, selected_index, edit_mode=True, val_row=val_row, form_version=form_version)
+        has_unsaved_changes = _normalize_for_compare(edited_record) != _normalize_for_compare(selected_record)
 
-        # Save / Revert buttons
-        c1, c2 = st.columns([1, 1])
-        with c1:
-            if st.button("Save Changes to This Record", type="primary"):
-                try:
-                    # Write back to in-memory dataset
-                    data[selected_index] = edited_record
+        if has_unsaved_changes:
+            c1, c2 = st.columns([1, 1])
+            with c1:
+                if st.button("Save Changes to This Record", type="primary"):
+                    try:
+                        # Write back to in-memory dataset
+                        data[selected_index] = edited_record
 
-                    # Persist to file (overwrite in place)
-                    Path(DATA_FILE_PATH).parent.mkdir(parents=True, exist_ok=True)
-                    with open(DATA_FILE_PATH, "w", encoding="utf-8") as f:
-                        json.dump(data, f, indent=2, ensure_ascii=False)
+                        # Persist to file (overwrite in place)
+                        Path(DATA_FILE_PATH).parent.mkdir(parents=True, exist_ok=True)
+                        with open(DATA_FILE_PATH, "w", encoding="utf-8") as f:
+                            json.dump(data, f, indent=2, ensure_ascii=False)
 
-                    st.cache_data.clear()  # refresh cached loaders
-                    st.success("Saved changes to processed_data.json.")
-                    st.toast("Record saved.")
-                except Exception as e:
-                    st.error(f"Error saving changes: {e}")
+                        st.cache_data.clear()  # refresh cached loaders
+                        st.session_state[f"edit_form_version_{selected_index}"] = 0
+                        st.success("Saved changes to processed_data.json.")
+                        st.toast("Record saved.")
+                    except Exception as e:
+                        st.error(f"Error saving changes: {e}")
 
-        with c2:
-            if st.button("Revert Unsaved Changes"):
-                st.info("Reverted to last saved version on disk.")
-                st.rerun()
+            with c2:
+                if st.button("Revert Unsaved Changes"):
+                    st.session_state[f"edit_form_version_{selected_index}"] = st.session_state.get(f"edit_form_version_{selected_index}", 0) + 1
+                    st.rerun()
 
         # Validation Errors
         st.subheader("Validation Errors")
